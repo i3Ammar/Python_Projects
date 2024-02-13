@@ -28,7 +28,7 @@ def core_date():
             page = requests.get(f'https://www.yallakora.com/Match-Center?date={date}')
         return page  
     except requests.exceptions.RequestException as e: 
-        raise e
+        print("An error occurred while making the request:", e)
 
 
 def get_match_info(championships)  :
